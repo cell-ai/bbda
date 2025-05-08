@@ -1,3 +1,6 @@
+from Bio import SeqIO
+import re
+
 def fasta_to_df(fasta_file):
     records = []
     for record in SeqIO.parse(fasta_file, "fasta"):
@@ -18,3 +21,4 @@ def fasta_to_df(fasta_file):
             "organism": organism
         })
     return pd.DataFrame(records)
+
