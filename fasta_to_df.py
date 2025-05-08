@@ -1,5 +1,6 @@
 from Bio import SeqIO
 import re
+import pandas as pd
 
 def fasta_to_df(fasta_file):
     records = []
@@ -22,3 +23,10 @@ def fasta_to_df(fasta_file):
         })
     return pd.DataFrame(records)
 
+
+def df_to_fasta(output_file, fasta_df)
+    with open(output_file, 'w') as fasta_file:
+        for _, row in fasta_df.iterrows():
+            header = row['header']
+            sequence = row['sequence']
+            fasta_file.write(f'>{header}\n{sequence}\n')
