@@ -1,2 +1,2 @@
-# bioinfo-basics
-basic functions to process common bioinformatics generated outputs
+# bbda
+functions for *b*asic *b*io*d*ata *a*nalysis
